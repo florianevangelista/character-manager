@@ -16,8 +16,5 @@
     "url": "https://github.com/florianevangelista/character-manager/issues"
   },
   "homepage": "https://github.com/florianevangelista/character-manager#readme",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "common-js": "^0.3.8"
-  }
+  "dependencies": {}
 }
