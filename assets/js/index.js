@@ -27,8 +27,6 @@ let description = "";
     });
 
     document.getElementById("parent").innerHTML = html;
-
-
 })();
 
 const onFileSelected = (event) => {

@@ -8,7 +8,11 @@ let id = url.searchParams.get("id");
     document.getElementById("secondName").innerHTML = character.name;
     document.getElementById("description").innerHTML = "Description : " + character.description;
     document.getElementById("idOfCharacter").innerHTML = "Id : " + character.id;
-    document.getElementById("image").innerHTML = `<img src="data:image/jpeg;base64, ${character.image}" width="750px" height="450px">`;
+    if(character.image == undefined) {
+        document.getElementById("image").innerHTML = `<img src="assets/images/noImage.png" width="750px" height="450px">`;
+    } else {
+        document.getElementById("image").innerHTML = `<img src="data:image/jpeg;base64, ${character.image}" width="750px" height="450px">`;
+    }
 })();
 
 const deleteFunc = () => {

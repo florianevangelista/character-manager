@@ -2502,6 +2502,8 @@ pages
   border-radius: 5px;
   padding: 30px;
   padding-bottom: 10px;
+  max-height: 550px;
+  overflow-y: scroll;
 }
 
 .page .page-bottom .about .about-text h2 {
