@@ -44,3 +44,9 @@ const onFileSelected = (event) => {
     reader.readAsDataURL(selectedFile);
 }
 
+const myfunc = async () => {
+    name = document.getElementById("form34").value;
+    shortDescription = document.getElementById("form29").value;
+    description = document.getElementById("form8").value;
+    await postCharacter(name, shortDescription, image , description);
+}

@@ -12,3 +12,14 @@ function getCharacterById(id) {
         });
 }
 
+function postCharacter(name, shortdesc, img, desc ) {
+    try {axios.post("https://character-database.becode.xyz/characters/",{
+    name : name,
+    shortDescription : shortdesc,
+    description : desc,
+    image : img
+    })}
+        catch(error){
+            console.error(error);
+        };
+}
