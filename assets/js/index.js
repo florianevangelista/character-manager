@@ -44,9 +44,30 @@ const onFileSelected = (event) => {
     reader.readAsDataURL(selectedFile);
 }
 
-const myfunc = async () => {
+const myFunc = async () => {
     name = document.getElementById("form34").value;
     shortDescription = document.getElementById("form29").value;
     description = document.getElementById("form8").value;
     await postCharacter(name, shortDescription, image , description);
+    setTimeout(function(){window.location.reload();},600);
+}
+
+const modifyFunc = async () => {
+    name = document.getElementById("modifName").value;
+    shortDescription = document.getElementById("modifShortDes").value;
+    description = document.getElementById("modifDes").value;
+    let url = new URL(location.href);
+    let id = url.searchParams.get("id");
+    let character = await getCharacterById(id);
+    if(name == "") {
+        name = character.name;
+    } if(shortDescription == "") {
+        shortDescription = character.shortDescription;
+    } if(description == "") {
+        description = character.description;
+    } if (image == "") {
+        image = character.image;
+    }
+    await putCharacter(name, shortDescription, image , description, id);
+    setTimeout(function(){window.location.reload();},600);
 }

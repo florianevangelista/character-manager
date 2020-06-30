@@ -62,45 +62,73 @@
 		</div>
 		<!-- ***** Page Top End ***** -->
 
-		<div class="modal fade marginBottom50" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header text-center">
-						<h4 class="modal-title w-100 font-weight-bold">MODIFY CHARACTER</h4>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body mx-3">
-						<div class="md-form mb-5">
-							<label data-error="wrong" data-success="right" for="modifName">Name</label>
-							<input type="text" id="modifName" class="form-control validate">
+		<div class="d-flex justify-content-center">
+			<div class="modal fade marginBottom50" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header text-center">
+							<h4 class="modal-title w-100 font-weight-bold">MODIFY CHARACTER</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
+						<div class="modal-body mx-3">
+							<div class="md-form mb-5">
+								<label data-error="wrong" data-success="right" for="modifName">Name</label>
+								<input type="text" id="modifName" class="form-control validate">
+							</div>
 
-						<div class="md-form mb-5">
-							<label data-error="wrong" data-success="right" for="modifShortDes">Short description</label>
-							<input type="text" id="modifShortDes" class="form-control validate">
-						</div>
+							<div class="md-form mb-5">
+								<label data-error="wrong" data-success="right" for="modifShortDes">Short description</label>
+								<input type="text" id="modifShortDes" class="form-control validate">
+							</div>
 
-						<div class="md-form mb-5">
-							<label data-error="wrong" data-success="right" for="modifImg">Image</label>
-							<input type="file" id="modifImg" class="form-control validate" onchange="onFileSelected(event)">
-						</div>
+							<div class="md-form mb-5">
+								<label data-error="wrong" data-success="right" for="modifImg">Image</label>
+								<input type="file" id="modifImg" class="form-control validate" onchange="onFileSelected(event)">
+							</div>
 
-						<div class="md-form">
-							<label data-error="wrong" data-success="right" for="modifDes">Description</label>
-							<textarea type="text" id="modifDes" class="md-textarea form-control" rows="4"></textarea>
+							<div class="md-form">
+								<label data-error="wrong" data-success="right" for="modifDes">Description</label>
+								<textarea type="text" id="modifDes" class="md-textarea form-control" rows="4"></textarea>
+							</div>
 						</div>
-					</div>
-					<div class="modal-footer d-flex justify-content-center">
-						<input type="submit" class="btn btn-unique" onclick="myFunc()" id="validateForm"></input>
+						<div class="modal-footer d-flex justify-content-center">
+							<input type="submit" class="btn btn-unique" onclick="modifyFunc()" id="validateForm"></input>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div> 
 
-		<div class="text-center">
-			<a href="" class="btn btn-default btn-rounded mb-5 mt-5" data-toggle="modal" data-target="#modalContactForm">MODIFY CHARACTER</a>
+			<div class="text-center">
+				<a href="" class="btn btn-default btn-rounded mb-5 mt-5 borderBtn mr-3" data-toggle="modal" data-target="#modalContactForm">MODIFY CHARACTER</a>
+			</div>
+
+			<div class="text-center">
+				<a href="" class="btn btn-default btn-rounded mb-5 mt-5 borderBtn" data-toggle="modal" data-target="#exampleModal">DELETE CHARACTER</a>
+			</div>
+
+			
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Confirm</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+					<span>Do you really want to delete these records? This process cannot be undone.</span>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="deleteFunc()">Delete</button>
+					</div>
+				</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="page-bottom">
@@ -122,6 +150,19 @@
 		</div>
 		<!-- ***** Page Content End ***** -->
 	</section>
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright">© 2020 Comics-manager. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer End ***** -->
+
 
 	<!-- jQuery -->
 	<script src="../js/jquery-2.1.0.min.js"></script>
