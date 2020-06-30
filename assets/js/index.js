@@ -1,3 +1,9 @@
+let name = "";
+let shortDescription = "";
+let image = "";
+let description = "";
+
+
 (async () => {
     let characters = await getListOfCharacters();
     let html = "";
@@ -21,4 +27,20 @@
     });
 
     document.getElementById("parent").innerHTML = html;
+
+
 })();
+
+const onFileSelected = (event) => {
+    var selectedFile = event.target.files[0];
+    var reader = new FileReader();
+
+  
+    reader.onload = (event) => {
+        let tab = event.target.result.split(',');
+        image = tab[1];
+    };
+  
+    reader.readAsDataURL(selectedFile);
+}
+

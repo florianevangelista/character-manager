@@ -11,3 +11,4 @@ function getCharacterById(id) {
             return response.data;
         });
 }
+
