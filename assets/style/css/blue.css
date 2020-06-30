@@ -2502,8 +2502,9 @@ pages
   border-radius: 5px;
   padding: 30px;
   padding-bottom: 10px;
+  min-height: 400px;
   max-height: 550px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .page .page-bottom .about .about-text h2 {
@@ -3016,6 +3017,12 @@ contact
     margin-top: 30px;
     padding-top: 30px;
   }
+
+  .page .page-bottom .about .about-text {
+    right: 0px !important;
+  }
+
+  
 }
 
 .myButton {
