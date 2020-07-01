@@ -37,9 +37,10 @@ function putCharacter(name, shortdesc, img, desc, id ) {
 }
 
 function deleteCharacter(id) {
-    try {axios.delete("https://character-database.becode.xyz/characters/"+id)}
-        catch(error){
+    try {axios.delete("https://character-database.becode.xyz/characters/"+id).then(()=>{
+        window.location.href = "../../index.html";
+    })
+    } catch(error){
             console.error(error);
         };
-    setTimeout(function(){window.location.href = "../../index.html";},600);   
 }
