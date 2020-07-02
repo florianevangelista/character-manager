@@ -1,5 +1,7 @@
 # Challenge: Character Manager
 
+![logo](./assets/images/favicon/favicon.png)
+
 |Challenge Parameters  |Challenge Details              |
 |:---------------------|:------------------------------|
 |Repository            |`character-manager`            |
