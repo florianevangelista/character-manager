@@ -1,7 +1,5 @@
 # Challenge: Character Manager
 
-![alt text](./assets/images/favicon/favcon.png "Logo")
-
 |Challenge Parameters  |Challenge Details              |
 |:---------------------|:------------------------------|
 |Repository            |`character-manager`            |
@@ -10,7 +8,7 @@
 |Deadline              |`01/07/2020 17h00`             |
 |Deployment method     |`GitHub pages` or `Netlify`                 |
 |Group composition     |`Duo`                          |
-|Project submition     |[Character-manager form]()|
+|Project submition     |Google form|
 
  
 
