@@ -29,7 +29,7 @@ This is a frontend project, We had to care about the appearance of your applicat
 
 * [Check this out](https://florianevangelista.github.io/character-manager/)
 
-## Our difficulties and our feelings
+## Our difficulties and feelings
 
 * The discovery and use of axios.
 * This project allowed us to deepen our knowledge on APIs and communication with a server.
