@@ -29,6 +29,11 @@ This is a frontend project, We had to care about the appearance of your applicat
 
 * [Check this out](https://florianevangelista.github.io/character-manager/)
 
+## Our difficulties and our feelings
+
+* The discovery and use of axios.
+* This project allowed us to deepen our knowledge on APIs and communication with a server.
+
 ## Built With
 
 * [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
