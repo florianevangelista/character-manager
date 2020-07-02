@@ -21,6 +21,7 @@ function postCharacter(name, shortdesc, img, desc ) {
     })}
         catch(error){
             console.error(error);
+            alert("Error");
         };
 }
 
@@ -30,17 +31,21 @@ function putCharacter(name, shortdesc, img, desc, id ) {
     shortDescription : shortdesc,
     description : desc,
     image : img
-    })}
-        catch(error){
+    }).then(()=>{
+        window.location.reload();
+    })} catch(error){
             console.error(error);
+            alert("Error");
         };
 }
 
 function deleteCharacter(id) {
-    try {axios.delete("https://character-database.becode.xyz/characters/"+id).then(()=>{
-        window.location.href = "../../index.html";
-    })
+    try {axios.delete("https://character-database.becode.xyz/characters/"+id)
+        .then(()=>{
+            window.location.href = "../../index.html";
+        })
     } catch(error){
             console.error(error);
+            alert("Error");
         };
 }

@@ -85,5 +85,4 @@ const modifyFunc = async () => {
         image = character.image;
     }
     await putCharacter(name, shortDescription, image , description, id);
-    setTimeout(function(){window.location.reload();},600);
 }
