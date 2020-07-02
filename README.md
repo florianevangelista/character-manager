@@ -27,6 +27,8 @@ In this project, we used the [Character Database API](https://character-database
   
 This is a frontend project, We had to care about the appearance of your application and create a custom template.
 
+* [Check this out](https://florianevangelista.github.io/character-manager/)
+
 ## Built With
 
 * [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
